@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar/Vr</title>
+    <style>
+        body {
+            margin: 0px;
+
+        }
+
+        .upcont {
+            display: flex;
+            margin: 0px 20px;
+
+
+            /* border: 3px solid green; */
+
+        }
+
+        .nav1 {
+
+            background-color: black;
+            /* border: 3px solid green; */
+
+        }
+
+        #upimg {
+            height: 30px;
+        }
+
+        .buttom {
+            display: flex;
+            list-style: none;
+            margin: 10px;
+        }
+
+
+        .inbt {
+            margin: 0px 20px;
+        }
+
+        .inbt:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+
+        nav {
+            /* border: 3px solid red; */
+            margin: 0px 0px;
+            padding: 3px 0px;
+            /* background-color: black; */
+            color: white;
+            align-items: center;
+            z-index: -1;
+        }
+
+        .nav2 {
+
+            margin: -5px;
+            /* border: 4px solid yellow; */
+        }
+
+        .img2 {
+            display: flex;
+            /* border: 3px solid blue; */
+            height: 400px;
+            margin: 0px;
+            background: url('img1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: black;
+
+        }
+
+        #para {
+            padding: 20px;
+            margin: 0px 250px;
+            font-size: large;
+        }
+
+        .imgcont {
+            display: flex;
+            flex-direction: column;
+            /* border: 3px solid red;  */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0px;
+        }
+
+        #but {
+            width: 100px;
+            height: 40px;
+            border-radius: 9px;
+            background-color: rgba(195, 19, 19, 0.627);
+        }
+
+        #but:hover {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+
+        #head {
+            color: black;
+            /* background-color: blueviolet; */
+            text-align: center;
+            font-size: 30px;
+            margin: 10px 0px;
+        }
+
+        .desc {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* align-items: center; */
+
+        }
+
+        .box {
+            border: 3px solid red;
+            margin: 5px;
+            width: 350px;
+            height: 250px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: rgb(223, 239, 250);
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+
+        }
+
+        #box1:hover {
+            width: 370px;
+            height: 270px;
+            background-color: rgb(203, 229, 246);
+        }
+
+        #box2:hover {
+            width: 370px;
+            height: 270px;
+            background-color: rgb(203, 229, 246);
+        }
+
+        #box3:hover {
+            width: 370px;
+            height: 270px;
+            background-color: rgb(203, 229, 246);
+        }
+
+        .boxhead {
+            margin: 5px;
+        }
+
+
+        #pizaa {
+            height: 80px;
+
+        }
+
+        #bulkfd {
+            height: 100px;
+
+        }
+
+        #deliver {
+            height: 80px;
+
+
+        }
+
+        .clientslogo {
+            /* border: 3px solid green; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+
+
+        }
+
+        .clients {
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 25px;
+
+
+        }
+
+        .logofd {
+            height: 50px;
+            margin: 50px;
+        }
+
+        #last {
+            /* border: 3px solid blue; */
+            width: 100%;
+
+
+
+
+        }
+
+        #last::before {
+            content: "";
+            position: absolute;
+            background: url('https://lh3.googleusercontent.com/O1KkcAEm8OWd3Opuz2zqmJHUIduD3BFix5zB2X83GeKOV-9O_V3IR7jIGWIJg4ar6k4KfQ=s128');
+            width: 100%;
+            height: 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .lastform {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 30px;
+            /* padding: 50px; */
+            /* border: 3px solid violet; */
+        }
+
+        #form {
+            margin: 8px;
+            padding: 5px;
+            width: 500px;
+        }
+
+        #form:hover {
+            background-color: rgb(206, 205, 205);
+        }
+
+        #submitbtn {
+            /* margin: 20px 0px 60px 0px; */
+
+            height: 30px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(3, 155, 3);
+        }
+
+        #submitbtn:hover {
+            background-color: green;
+        }
+
+        .lastform::before {
+            content: "";
+            position: absolute;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDT859IXs_0FYawIJrQIYymoiuongjtzc_w&usqp=CAU');
+            width: 100%;
+            height: 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav1">
+        <div class="upcont">
+            <img src="https://cdn.pixabay.com/photo/2016/03/08/10/14/icon-1243684__340.png" alt="" id="upimg">
+
+            <div class="buttom">
+                <li class="inbt"><a href=""></a>Home</li>
+                <li class="inbt"><a href=""></a>Services</li>
+                <li class="inbt"><a href=""></a>Blogs</li>
+                <li class="inbt"><a href=""></a>Contact Us</li>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav2">
+        <div class="img2">
+            <div class="imgcont">
+
+                <h2>Welcome To Visual Learning</h2>
+                <p id="para">A website that focuses on visual learning would be designed with the understanding that
+                    some people learn best through images, videos, and other visual aids. The website would likely have
+                    a clean and simple design, with a focus on visual elements such as graphics, videos, and
+                    animations.Overall, the website would be a comprehensive resource for anyone who learns best through
+                    visual materials, as well as for educators looking for innovative ways to teach their students.
+                </p>
+                
+                <!-- <button id="but">Login</button> -->
+
+                <button id="but">
+                    <a href="login.html">Login</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="thi">
+
+        <h1 id="head">Topics</h1>
+
+        <div class="desc">
+            <div class="box" id="box1"> <img src="dig.jpg" alt="" id="pizaa">
+                <h2 class="boxhead">Digestive System</h2>
+                <div>
+                    <p>The digestive system includes the mouth, pharynx (throat), esophagus, stomach, small intestine,
+                        large intestine, rectum, and anus. It also includes the salivary glands, liver, gallbladder, and
+                        pancreas.
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="box" id="box2"> <img src="tri.jpg" alt="" id="bulkfd">
+                <h2 class="boxhead">Trigonometry</h2>
+                <div>
+                    <p>The branch of mathematics concerned with specific functions of angles and their application to
+                        calculations. There are six functions of an angle commonly used in trigonometry. 
+                    </p>
+                </div>
+
+            </div>
+            <div class="box" id="box3"><img
+                    src="carbon.jpeg"
+                    alt="" id="deliver">
+                <h2 class="boxhead">Carbon Compound</h2>
+                <div>
+                    <p>Carbon compounds are defined as chemical substances containing carbon. More compounds of carbon
+                        exist than any other chemical element except for hydrogen. Organic carbon compounds are far more
+                        numerous than inorganic carbon compounds.
+                    </p>
+                </div>
+            </div>
+
+            <nav id="last">
+
+                <div class="clients">
+                    <h1>Our Clients</h1>
+                </div>
+                <div class="clientslogo">
+                    <div><img src="mpgi1.png" alt=""
+                            class="logofd"></div>
+                    <div><img src="psit1.png" alt=""
+                            class="logofd"></div>
+                    <div><img
+                            src="kgi1.png"
+                            alt="" class="logofd"></div>
+                    <div><img
+                            src="https://lh3.googleusercontent.com/sSr_dNr3FQbfjRjgQdkZ36SJhxHzju0FILuVDg0O1l-MGBKerx9kSONdTgNrlgET0aUJ1w=s85"
+                            alt="" class="logofd"></div>
+                </div>
+            </nav>
+
+            <div class="lastform">
+                <h1>Contact Us</h1>
+                <input type="text" placeholder="Enter Your Name" id="form">
+                <input type="text" placeholder="Enter Your Email Id" id="form">
+                <input type="text" placeholder="Enter Your Contact Number" id="form">
+                <input type="text" placeholder="Enter Your Reason For Contacting" id="form">
+                <button id="submitbtn">Submit</button>
+
+            </div>
+
+
+
+</body>
+
+</html>
